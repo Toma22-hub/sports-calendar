@@ -1,0 +1,116 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "season": 2024,
+      "status": "played",
+      "timeVenueUTC": "00:00:00",
+      "dateVenue": "2024-01-03",
+      "homeTeam": {
+        "name": "Al Shabab",
+        "abbreviation": "SHA",
+        "teamCountryCode": "KSA"
+      },
+      "awayTeam": {
+        "name": "Nasaf",
+        "abbreviation": "NAS",
+        "teamCountryCode": "UZB"
+      },
+      "result": {
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "winner": "Nasaf"
+      },
+      "stage": { "name": "ROUND OF 16" },
+      "originCompetitionName": "AFC Champions League"
+    },
+    {
+      "id": 2,
+      "season": 2024,
+      "status": "scheduled",
+      "timeVenueUTC": "16:00:00",
+      "dateVenue": "2024-01-03",
+      "homeTeam": {
+        "name": "Al Hilal",
+        "abbreviation": "HIL",
+        "teamCountryCode": "KSA"
+      },
+      "awayTeam": {
+        "name": "Shabab Al Ahli",
+        "abbreviation": "SAH",
+        "teamCountryCode": "UAE"
+      },
+      "result": {
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "winner": null
+      },
+      "stage": { "name": "ROUND OF 16" },
+      "originCompetitionName": "AFC Champions League"
+    },
+    {
+      "id": 3,
+      "season": 2024,
+      "status": "scheduled",
+      "timeVenueUTC": "15:25:00",
+      "dateVenue": "2024-01-04",
+      "homeTeam": {
+        "name": "Al Duhail",
+        "abbreviation": "DUH",
+        "teamCountryCode": "QAT"
+      },
+      "awayTeam": {
+        "name": "Al Rayyan",
+        "abbreviation": "RYN",
+        "teamCountryCode": "QAT"
+      },
+      "result": {
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "winner": null
+      },
+      "stage": { "name": "ROUND OF 16" },
+      "originCompetitionName": "AFC Champions League"
+    },
+    {
+      "id": 4,
+      "season": 2024,
+      "status": "scheduled",
+      "timeVenueUTC": "08:00:00",
+      "dateVenue": "2024-01-04",
+      "homeTeam": {
+        "name": "Al Faisaly",
+        "abbreviation": "FAI",
+        "teamCountryCode": "KSA"
+      },
+      "awayTeam": {
+        "name": "Foolad",
+        "abbreviation": "FLD",
+        "teamCountryCode": "IRN"
+      },
+      "result": {
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "winner": null
+      },
+      "stage": { "name": "ROUND OF 16" },
+      "originCompetitionName": "AFC Champions League"
+    },
+    {
+      "id": 5,
+      "season": 2024,
+      "status": "scheduled",
+      "timeVenueUTC": "00:00:00",
+      "dateVenue": "2024-01-19",
+      "homeTeam": null,
+      "awayTeam": {
+        "name": "Urawa Reds",
+        "abbreviation": "RED",
+        "teamCountryCode": "JPN"
+      },
+      "result": null,
+      "stage": { "name": "FINAL" },
+      "originCompetitionName": "AFC Champions League"
+    }
+  ]
+}
