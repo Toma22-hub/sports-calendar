@@ -33,7 +33,7 @@ function Calendar({ events }) {
           return (
             <div key={i} style={{
               ...styles.cell,
-              backgroundColor: isToday ? '#e94560' : '#16213e',
+              backgroundColor: isToday ? '#519fd3' : '#f1f2f4',
               opacity: day ? 1 : 0.2
             }}>
               {day && <span style={styles.dayNum}>{day}</span>}
@@ -52,18 +52,18 @@ function Calendar({ events }) {
 }
 
 const styles = {
-  container: { padding: '20px', backgroundColor: '#0f3460', minHeight: '100vh' },
+  container: { padding: '20px', backgroundColor: '#3d4a58', minHeight: '100vh' },
   title: { textAlign: 'center', color: 'white', marginBottom: '16px' },
   grid: {
     display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)',
     gap: '6px', maxWidth: '900px', margin: '0 auto'
   },
-  dayName: { color: '#e94560', textAlign: 'center', fontWeight: 'bold', padding: '8px' },
+  dayName: { color: '#fff9fa', textAlign: 'center', fontWeight: 'bold', padding: '8px' },
   cell: {
     minHeight: '80px', borderRadius: '8px', padding: '6px',
     color: 'white', fontSize: '0.8rem'
   },
-  dayNum: { display: 'block', fontWeight: 'bold', marginBottom: '4px' },
+  dayNum: { color:'#0c0c0c', display: 'block', fontWeight: 'bold', marginBottom: '4px' },
   eventBadge: {
     backgroundColor: '#e94560', borderRadius: '4px', padding: '2px 4px',
     marginTop: '2px', cursor: 'pointer', fontSize: '0.7rem', lineHeight: '1.3'

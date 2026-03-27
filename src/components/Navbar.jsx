@@ -17,7 +17,7 @@ const styles = {
     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
     backgroundColor: '#1a1a2e', padding: '14px 24px', color: 'white'
   },
-  logo: { fontSize: '1.2rem', fontWeight: 'bold', color: '#e94560' },
+  logo: { fontSize: '1.2rem', fontWeight: 'bold', color: '#f9f9f9' },
   links: { display: 'flex', gap: '20px' },
   link: { color: 'white', textDecoration: 'none', fontSize: '1rem' }
 };
