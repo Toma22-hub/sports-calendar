@@ -1,3 +1,4 @@
+
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Calendar.css';
@@ -80,9 +81,26 @@ function Calendar({ events }) {
         </div>
       </div>
 
+      {/* Sidebar */}
       <div className="sidebar">
         <h3 className="sidebar-title">🔍 Filters</h3>
 
+        {/* Go to Month */}
+        <div className="filter-group">
+          <label className="filter-label">Go to Month</label>
+          <input
+            type="month"
+            onChange={e => {
+              if (e.target.value) {
+                const [y, m] = e.target.value.split('-');
+                setCurrentDate(new Date(parseInt(y), parseInt(m) - 1, 1));
+              }
+            }}
+            className="filter-select"
+          />
+        </div>
+
+        {/* Search Team */}
         <div className="filter-group">
           <label className="filter-label">Search Team</label>
           <input
@@ -94,6 +112,7 @@ function Calendar({ events }) {
           />
         </div>
 
+        {/* Sport */}
         <div className="filter-group">
           <label className="filter-label">Sport</label>
           <select value={filterSport}
@@ -103,6 +122,7 @@ function Calendar({ events }) {
           </select>
         </div>
 
+        {/* From Date */}
         <div className="filter-group">
           <label className="filter-label">From Date</label>
           <input type="date" value={filterFrom}
@@ -110,6 +130,7 @@ function Calendar({ events }) {
             className="filter-select" />
         </div>
 
+        {/* To Date */}
         <div className="filter-group">
           <label className="filter-label">To Date</label>
           <input type="date" value={filterTo}
@@ -117,6 +138,7 @@ function Calendar({ events }) {
             className="filter-select" />
         </div>
 
+        {/* Clear Filters */}
         <button onClick={() => {
           setFilterSport('All');
           setFilterFrom('');
