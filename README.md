@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Sports Calendar App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sports event calendar built with React.js as part of the Sportradar Coding Academy Frontend Exercise.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This application allows users to view sports events on a monthly calendar, explore event details, and add new events during runtime. It was built to demonstrate core frontend development skills including component architecture, routing, state management, and responsive design.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Core Tasks
+- Task 1 – Calendar View: Monthly calendar grid showing sports events with event markers on relevant days
+- Task 2 – Event Detail Page: Click any event to view full details including teams, date, time, stage, and result
+- Task 3 – Add Event: Form to add new events at runtime which instantly appear on the calendar
+- Task 4 – Responsiveness: Fully responsive layout for mobile, tablet, and desktop
+- Task 5 – Navigation: Navbar with links to Calendar view and Add Event page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Optional Features
+- Filters: Filter events by sport type, team name, and date range
+- Go to Month: Jump directly to any month/year from the sidebar
+- Styling: Custom CSS per component with a clean dark theme
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js
+- React Router DOM
+- JavaScript (ES6+)
+- CSS 
 
-### `npm run build`
+## How to Run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+git clone https://github.com/Toma22-hub/sports-calendar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate into the project folder:
+cd sports-calendar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+npm install
 
-### `npm run eject`
+4. Start the app:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open your browser at:
+http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app uses AFC Champions League 2024 match data provided as a JSON file. Each event includes:
+- Home and away teams
+- Match date and time (UTC)
+- Stage (e.g. Round of 16, Final)
+- Result and winner (for played matches)
+- Sport type
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Assumptions and Decisions
 
-## Learn More
+- Events are stored in memory only — no persistent storage is used as per the exercise requirements
+- A sport field was added to each event in the JSON to support the sport filter
+- The calendar displays the current month by default, with arrows and a month picker to navigate to other months
+- New events added via the form appear immediately on the calendar without page refresh
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by Jannatul Nime Toma
