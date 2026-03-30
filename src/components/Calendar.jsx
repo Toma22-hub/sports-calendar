@@ -1,4 +1,3 @@
-
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Calendar.css';
@@ -12,6 +11,7 @@ function Calendar({ events }) {
   const [filterFrom, setFilterFrom] = useState('');
   const [filterTo, setFilterTo] = useState('');
   const [filterTeam, setFilterTeam] = useState('');
+  const [filterMonth, setFilterMonth] = useState('');
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -52,6 +52,15 @@ function Calendar({ events }) {
     month === today.getMonth() &&
     year === today.getFullYear();
 
+  const handleClearFilters = () => {
+    setFilterSport('All');
+    setFilterFrom('');
+    setFilterTo('');
+    setFilterTeam('');
+    setFilterMonth('');
+    setCurrentDate(new Date());
+  };
+
   return (
     <div className="calendar-wrapper">
       <div className="calendar-container">
@@ -90,7 +99,9 @@ function Calendar({ events }) {
           <label className="filter-label">Go to Month</label>
           <input
             type="month"
+            value={filterMonth}
             onChange={e => {
+              setFilterMonth(e.target.value);
               if (e.target.value) {
                 const [y, m] = e.target.value.split('-');
                 setCurrentDate(new Date(parseInt(y), parseInt(m) - 1, 1));
@@ -139,12 +150,7 @@ function Calendar({ events }) {
         </div>
 
         {/* Clear Filters */}
-        <button onClick={() => {
-          setFilterSport('All');
-          setFilterFrom('');
-          setFilterTo('');
-          setFilterTeam('');
-        }} className="clear-btn">
+        <button onClick={handleClearFilters} className="clear-btn">
           Clear Filters
         </button>
       </div>
